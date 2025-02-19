@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'basesangular';
+  public title:string ='hola mundo ';
+  public contador:number=10;
+  //title = 'basesangular';
+
+  incrementarValor(value:number):void {
+    this.contador+=value;
+  }
+  reiniciar(){
+    this.contador=10;
+  }
 }
