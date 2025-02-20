@@ -1,24 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContadorComponent1 } from './contador/contador.component';
 import { persoanjeModulo } from './Personajes/personaje.modulo';
-import { AddCaracterComponent } from './personajes/components/add-caracter/add-caracter.component';
-import { ListComponent } from './personaje1/components/list/list.component';
+import { Personaje1Module } from './personaje1/personaje1.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AddCaracterComponent,
-    ListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ContadorComponent1,
-    persoanjeModulo
+    persoanjeModulo,
+    Personaje1Module
   ],
   providers: [],
   bootstrap: [AppComponent]
