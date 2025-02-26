@@ -1,5 +1,7 @@
 export interface Icaracter{
     id?: string,
     nombre: string,
-    dorsal: number
+    numero: number,
+    equipo: string,
+    posicion: string
 }

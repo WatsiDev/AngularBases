@@ -1,1 +1,32 @@
-<p>add-caracter works!</p>
+<h4>Agregar Caricatura</h4>
+  <form class="row" (ngSubmit)="enviarCaracteres()" >
+    <input type="text"
+     [(ngModel)]="character.nombre"
+     name="nombre"
+     class="form-control mb-3"
+     placeholder="Nombre"> <!--FormsModule agregarla "Import" en personaje1.module.ts-->
+
+     <input type="text"
+     [(ngModel)]="character.equipo"
+     name="Equipo"
+     class="form-control mb-3"
+     placeholder="Equipo">
+
+     <input type="text"
+     [(ngModel)]="character.posicion"
+     name="Posicion"
+     class="form-control mb-3"
+     placeholder="Posicion">
+
+     <input type="number"
+     name="tiempo"
+     [(ngModel)]="character.numero"
+      class="form-control mb-3"
+      placeholder="Numero">
+
+  <button type="submit" class="btn btn-primary">
+   Agregar
+  </button>
+
+  <pre>{{character | json}}</pre>
+</form>

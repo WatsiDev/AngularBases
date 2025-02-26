@@ -13,11 +13,14 @@
    }">
    <div>
     <span class="text-primary">{{i}}. </span>
+    <strong> Jugador: </strong>
     <span>{{caracterV.nombre}}</span>
-    <strong>/Fecha de inicio: </strong>
-    <span>{{caracterV.dorsal}}</span>
-    <span>Es el primero: {{primero}}</span>
-    <span>Es el ultimo: {{ultimo}}</span>
+    <strong> Numero: </strong>
+    <span>{{caracterV.numero}}</span>
+    <strong> Equipo: </strong>
+    <span>{{caracterV.equipo}}</span>
+    <strong> Posicion: </strong>
+    <span>{{caracterV.posicion}}</span>
    </div>
 
    <button (click)="onDeleteCaracterH(caracterV.id)" class="btn btn-danger">X</button>

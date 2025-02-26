@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PersonajeService } from '../servicios/personaje.service';
 import { Icaracter } from '../interfaces/caracter.interface';
 
 @Component({
-  selector: 'selector-name',
+  selector: 'main-page-component',
   standalone: false,
   templateUrl: './main-pagina.component.html'
 })

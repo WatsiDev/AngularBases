@@ -10,7 +10,9 @@ export class ListComponent {
   @Input()
   public caracterList: Icaracter[] = [{
     nombre: 'Messi',
-    dorsal: 10
+    numero: 10,
+    equipo: "Inter Miami",
+    posicion: "ED"
   }]
 
   @Output()

@@ -7,15 +7,21 @@ export class PersonajeService {
   public caracterV: Icaracter[] = [{
     id: v4(),
     nombre: "Messi"
-    ,dorsal: 10
+    ,numero: 10,
+    equipo: "Inter Miami",
+    posicion: "ED"
   }, {
     id: v4(),
     nombre: "Lamine Yamal",
-    dorsal: 19
+    numero: 19,
+    equipo: "FC Barcelona",
+    posicion: "ED"
   }, {
     id: v4(),
     nombre: "Lewandowski",
-    dorsal: 9
+    numero: 9,
+    equipo: "FC Barcelona",
+    posicion: "DC"
   }]
 
   AddCaracterP(caracter: Icaracter): void {
